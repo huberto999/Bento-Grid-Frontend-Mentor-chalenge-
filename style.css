@@ -1,0 +1,263 @@
+body{
+    font-family: "DM Sans", "Comic Sans MS", sans-serif;
+    font-weight: 400;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 6vw;
+}
+
+#artykuly {
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 'agi' 'konta' 'stalyczas' 'smczas' 'kontent' 'wzrost' 'szybszyczas' 'moragi';
+}
+.pudlo{
+    margin: 2vw;
+    max-width: 90vw;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#agi {
+    background-color: hsl(256, 67%, 59%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    grid-area: agi;
+}
+
+#konta {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: konta;
+}
+
+#stalyczas {
+    background-color: hsl(39, 100%, 71%);
+    grid-area: stalyczas;
+}
+
+#smczas {
+    background-color: hsl(254, 88%, 90%);
+    grid-area: smczas;
+}
+
+#kontent {
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    grid-area: kontent;
+    display: flex;
+    flex-direction: column;
+}
+
+#wzrost {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: wzrost;
+}
+
+#szybszyczas {
+    background-color: hsl(31, 66%, 93%);
+    grid-area: szybszyczas;
+}
+
+#moragi {
+    background-color: hsl(39, 100%, 71%);
+    grid-area: moragi;
+}
+
+
+#gwiazdkiimg {
+    width: 60vw;
+    
+}
+
+#kontaimg  {
+    width: 90vw;
+}
+
+#kalendarz {
+    position: relative;
+    top: 30px;
+    width: 50vw;
+}
+
+#smczasimg {
+    width: 90vw;
+}
+
+#wzrostobs {
+    width: 50vw;
+}
+
+#wzrostpubliki{
+    width: 50vw;
+}
+
+#createpost {
+    width: 50vw;
+}
+
+#tworzzagi{
+    width: 65vw;
+}
+
+
+
+#bolder {
+    font-size: 10vw;
+}
+#niebolder {
+    font-size: 2vw;
+}
+
+
+@media (min-width: 800px) {
+
+    body{
+        font-size: 1vw;
+        
+    }
+
+    .pudlo {
+        margin: 0;
+        padding: 1vw;
+    }
+
+    #artykuly {
+        margin-top: 3vh;
+
+
+        display: grid;
+        grid-template-columns: repeat(4 , 12.25vw) ;
+        grid-template-rows: repeat(24, 1.75vh);
+
+        gap: 1vw;
+
+        grid-template-areas: 
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas agi agi smczas'
+        'szybszyczas konta stalyczas smczas'
+        'szybszyczas konta stalyczas smczas'
+        'moragi konta stalyczas smczas'
+        'moragi konta stalyczas smczas'
+        'moragi konta stalyczas smczas'
+        'moragi konta stalyczas smczas'
+        'moragi konta stalyczas smczas'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent'
+        'moragi wzrost kontent kontent';
+    }
+
+#agi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 2.25vw;
+}
+
+#konta{
+    font-size: 1.25vw;
+}
+
+
+#stalyczas {
+    font-size: 1.1vw;
+}
+
+#smczas b {
+    font-size: 1.25vw;
+    
+}
+
+#kontent {
+    flex-direction: row;
+    font-size: 1.5vw;
+    align-items: center;
+}
+
+#szybszyczas{
+    padding-top: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#moragi{
+    font-size: 1.25vw;
+}
+
+
+
+#gwiazdkiimg {
+    width: 12.5vw;
+    align-self: center;
+}
+
+#kontaimg  {
+    width: 17vw;
+}
+
+#kalendarz {
+    width: 11vw;
+}
+
+#smczasimg {
+    width: 20vw;
+    padding: 1vw;
+    padding-left: 0;
+}
+
+#wzrostobs {
+    width: 12vw;
+    padding-right: 1vw;
+}
+
+#wzrostpubliki{
+    width: 10vw;
+    padding-top: 1.5vw;
+}
+
+#createpost {
+    width: 10vw;
+    margin-top: 3vw;
+}
+
+#tworzzagi{
+    width: 11vw;
+    margin-top: 2vw;
+}
+    
+
+
+#bolder{
+    font-size: 2vw;
+}
+#niebolder{
+    font-size: 0.75vw;
+}
+
+}
+
+
+
+
+.attribution { font-size: 0.6875rem; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
